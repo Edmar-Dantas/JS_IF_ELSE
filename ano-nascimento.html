@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ano Nascimento</title>
+</head>
+<body>
+    <h1>Ano de Nascimento</h1>
+    <p id = "msg1"></p>
+    <p id="msg2"></p>
+    <p id="resul"></p>
+
+    <script>
+        let nome1 = prompt("Digite o nome da primeira pessoa");
+        let nome2 = prompt("Digite o nome da segunda pessoa");
+        let nascimento1 = Number(prompt("Digite o ano que " + nome1 + " nasceu"));
+        let nascimento2 = Number(prompt("Digite o ano que " + nome2 + " nasceu"));
+
+        if (nascimento1 > nascimento2){
+            resul = "A pessoa mais nova é " + nome1;
+        }
+        else{
+            resul = "A pessoa mais nova é " + nome2;
+        }
+
+        msg1 = nome1 + " tem " + (2023 - nascimento1) + " anos";
+        msg2 = nome2 + " tem " + (2023 - nascimento2) + " anos";
+
+        document.getElementById("msg1").innerHTML = msg1;
+        document.getElementById("msg2").innerHTML = msg2;
+        document.getElementById("resul").innerHTML = resul;
+    </script>
+</body>
+</html>

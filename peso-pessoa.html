@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula Peso</title>
+</head>
+<body>
+    <h1 id="resul"></h1>
+    <script>
+        let nome1 = prompt("Digite o nome da primeira pessoa");
+        let nome2 = prompt("Digite o nome da segunda pessoa");
+        let peso1 = Number(prompt("Digite o peso do(a) " + nome1));
+        let peso2 = Number(prompt("Digite o nome do(a)" + nome2));
+
+        if (peso1 > peso2){
+            resul = "A pessoa mais obesa é " + nome1 + " e seu peso é de " + peso1 + " Kilos";
+        }else{
+            resul = "A pessoa mais obesa é " + nome2 + " e seu peso é de " + peso2 + " Kilos";
+        }
+
+        document.getElementById("resul").innerHTML = resul;
+    </script>
+
+</body>
+</html>
